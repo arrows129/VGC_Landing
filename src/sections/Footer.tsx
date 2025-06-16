@@ -1,28 +1,53 @@
-/* eslint-disable react/jsx-key */
-import LogoImage from "@/assets/images/vgc_logo-removebg.png"
-import Image from "next/image";
-
-const footerLinks = [
-    { href: "#", label: "Contact" },
-    { href: "#", label: "Privacy Policy" },
-    { href: "#", label: "Terms & Conditions" },
-];
-
+// components/Footer.tsx
 export default function Footer() {
-    return <section className="py-16">
-        <div className="container">
-            <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
-                <div>
-                    <Image src={LogoImage} alt="logo" className="h-10 md:h-14 w-auto "/>
-                </div>
-                <div>
-                    <nav className="flex gap-6">
-                        {footerLinks.map(link =>(
-                            <a href={link.href} className="text-white/50 text-sm">{link.label}</a>
-                        ))}
-                    </nav>
-                </div>
-            </div>
+  return (
+    <footer className="bg-neutral-950 text-gray-400 pt-16 pb-10 px-6 md:px-16 border-t border-gray-800">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Logo + Tagline */}
+        <div>
+          <h2 className="text-white text-2xl font-bold mb-3">TrackD2C</h2>
+          <p className="text-sm text-gray-500">
+            Run your D2C brand like a pro — all from one dashboard.
+          </p>
         </div>
-    </section>
+
+        {/* Product Links */}
+        <div>
+          <h3 className="text-white font-semibold mb-3">Product</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-white transition">Features</a></li>
+            <li><a href="#" className="hover:text-white transition">Pricing</a></li>
+            <li><a href="#" className="hover:text-white transition">Demo</a></li>
+            <li><a href="#" className="hover:text-white transition">FAQs</a></li>
+          </ul>
+        </div>
+
+        {/* Company Links */}
+        <div>
+          <h3 className="text-white font-semibold mb-3">Company</h3>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-white transition">About</a></li>
+            <li><a href="#" className="hover:text-white transition">Blog</a></li>
+            <li><a href="#" className="hover:text-white transition">Careers</a></li>
+            <li><a href="#" className="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-white font-semibold mb-3">Get in Touch</h3>
+          <p className="text-sm mb-2">support@trackd2c.com</p>
+          <p className="text-sm mb-4">+91-90000-12345</p>
+          <div className="flex space-x-4 mt-2">
+            <a href="#" className="hover:text-white transition">LinkedIn</a>
+            <a href="#" className="hover:text-white transition">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+        © {new Date().getFullYear()} TrackD2C. All rights reserved.
+      </div>
+    </footer>
+  );
 }

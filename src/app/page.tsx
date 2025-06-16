@@ -8,6 +8,7 @@ import Integrations from "@/sections/Integrations";
 import Faqs from "@/sections/Faqs";
 import CallToAction from "@/sections/CallToAction";
 import Footer from "@/sections/Footer";
+import PainPointsSection from "@/components/PainPointsSection";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <LogoTicker />
             <Introduction />
             <Features />
+            <PainPointsSection />
             <Integrations />
             <Faqs />
             <CallToAction />

@@ -117,15 +117,13 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6">
-                    Impactful Design, created effortlessly
-                </h1>
+                <h4 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6">
+                    Run Your D2C Brand Like a Pro <br/>All from One Dashboard
+                </h4>
 
                 <p className="text-center text-white/70 text-lg md:text-xl mt-8 max-w-2xl mx-auto leading-relaxed">
-                    Design tools shouldn&apos;t slow you down.{" "}
-                    <span className="text-lime-400">VGC</span> combines powerful
-                    features with an intuitive interface that keeps you in your
-                    creative flow.
+                    From logistics to ad performance, our platform centralizes your brand’s entire backend with data
+driven insights — so you can focus on growth.
                 </p>
 
                 <form className="flex border border-white/15 rounded-full p-2 mt-8 max-w-lg mx-auto gap-6">
