@@ -4,7 +4,7 @@ import shopifyIcon from "@/asset/shopify1.svg";
 import googleAdsIcon from "@/asset/google-ads.svg";
 import facebookAdsIcon from "@/asset/meta.svg";
 import razorpayIcon from "@/asset/razorpay.svg";
-import wordpressIcon from "@/asset/wordPress.png";
+import wordpressIcon from "@/asset/WordPress.png";
 import wixIcon from "@/asset/wix.svg";
 import googleAnalyticsIcon from "@/asset/google-analytics.svg";
 import IntegrationsColumn from "@/components/IntegrationsColumn";
