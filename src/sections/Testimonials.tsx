@@ -99,7 +99,7 @@ export default function Testimonials() {
       <div className="container max-w-6xl mx-auto px-4 text-center">
         <Tag className="mb-6">What Founders Say</Tag>
         <h2 className="text-4xl md:text-5xl font-bold mb-16">
-          Trusted by modern <span className="text-blue-400">D2C leaders</span>
+          Trusted by modern <span className="text-[#013e95]">D2C leaders</span>
         </h2>
 
         <div className="relative">

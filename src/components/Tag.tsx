@@ -6,7 +6,7 @@ export default function Tag(props: HTMLAttributes<HTMLDivElement>) {
     return (
         <div
             className={twMerge(
-                "inline-flex border border-lime-400 gap-2 text-lime-400 px-3 py-1 rounded-full uppercase items-center",
+                "inline-flex border border-[#ffd900] gap-2 text-[#ffd900] px-3 py-1 rounded-full uppercase items-center",
                 "text-sm px-3 py-1",                // default size
                 "lg:text-xl lg:px-8 lg:py-3",       // larger size for large devices
                 className

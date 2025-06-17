@@ -45,7 +45,7 @@ export default function Introduction() {
         </div>
 
         <div className="mt-10 px-4 text-center max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#ffd900] to-[#013e95] bg-clip-text text-transparent">
             Track Smarter. Scale Faster.
           </h2>
 
@@ -97,7 +97,7 @@ export default function Introduction() {
 
             <span className="block mt-10 text-4xl md:text-6xl font-semibold text-white">
               That’s why we built{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-blue-400 text-4xl md:text-5xl font-extrabold tracking-tight animate-pulse">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffd900] to-[#013e95] text-4xl md:text-5xl font-extrabold tracking-tight animate-pulse">
                 TrackD2C
               </span>
               .

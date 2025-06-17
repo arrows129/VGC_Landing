@@ -60,7 +60,7 @@ export default function FeaturesSection() {
             <div className="absolute bottom-10 right-10 w-60 h-60 bg-blue-500 opacity-20 rounded-full blur-2xl -z-10 animate-ping"></div>
 
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                <h2 className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-[#ffd900] to-[#013e95] text-transparent bg-clip-text">
                     Powerful Features for D2C Founders
                 </h2>
                 <p className="text-gray-400 mb-12 max-w-2xl mx-auto">
@@ -84,7 +84,7 @@ export default function FeaturesSection() {
                                 className="relative bg-[#1a1a1a] border border-gray-800 rounded-2xl p-6 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.7)] hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)] transform-gpu hover:scale-105 hover:rotate-1 transition duration-300 backdrop-blur"
                             >
                                 <div className="absolute -top-5 -left-5 w-20 h-20 bg-blue-600 opacity-20 rounded-full blur-2xl"></div>
-                                <div className="bg-gradient-to-br from-blue-600 to-purple-600 p-3 rounded-xl inline-flex mb-4 shadow-md border border-white/10">
+                                <div className="bg-gradient-to-br from-[#ffd900] to-[#013e95] p-3 rounded-xl inline-flex mb-4 shadow-md ">
                                     <Icon className="text-white" size={26} />
                                 </div>
                                 <h3 className="text-xl font-semibold mb-2 text-white">

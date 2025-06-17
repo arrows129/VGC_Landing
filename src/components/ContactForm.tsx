@@ -17,7 +17,6 @@ export default function ContactForm() {
             </div>
 
             <div className="max-w-6xl mx-auto relative min-h-[700px] sm:min-h-[650px]">
-                {/* Large Lottie Background */}
                 <div className="absolute inset-0 z-0">
                     <Lottie
                         animationData={animationData}
@@ -42,39 +41,39 @@ export default function ContactForm() {
                         <input
                             type="text"
                             placeholder="First Name"
-                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#ffd900] placeholder-gray-400"
                         />
                         <input
                             type="text"
                             placeholder="Last Name"
-                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#ffd900] placeholder-gray-400"
                         />
                         <input
                             type="email"
                             placeholder="Business Mail ID"
-                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#ffd900] placeholder-gray-400"
                         />
                         <input
                             type="tel"
                             placeholder="Phone Number"
-                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#ffd900] placeholder-gray-400"
                         />
                         <input
                             type="text"
                             placeholder="Brand / Website Name"
-                            className="sm:col-span-2 bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+                            className="sm:col-span-2 bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#ffd900] placeholder-gray-400"
                         />
                         <input
                             type="date"
-                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#ffd900] placeholder-gray-400"
                         />
                         <input
                             type="time"
-                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+                            className="bg-[#121212]/80 border border-gray-700 text-white p-3 sm:p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#ffd900] placeholder-gray-400"
                         />
                         <button
                             type="submit"
-                            className="sm:col-span-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition text-white font-semibold py-3 sm:py-4 rounded-xl shadow-lg"
+                            className="sm:col-span-2 bg-gradient-to-r from-[#ffd900] to-[#013e95] transition text-white font-semibold py-3 sm:py-4 rounded-xl shadow-lg"
                         >
                             Book Demo
                         </button>

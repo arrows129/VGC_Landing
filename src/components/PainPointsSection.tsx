@@ -57,7 +57,7 @@ export default function PainPointsSection() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 drop-shadow-lg"
+                    className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#ffd900] to-[#013e95] drop-shadow-lg"
                 >
                     TrackD2C Solves Real Problems
                 </motion.h2>
@@ -67,7 +67,7 @@ export default function PainPointsSection() {
                 </p>
             </div>
 
-            <div className="relative flex flex-col items-center space-y-16 before:absolute before:top-0 before:bottom-0 before:left-1/2 before:w-1 before:-translate-x-1/2 before:bg-gradient-to-b before:from-blue-500 before:via-purple-600 before:to-blue-500">
+            <div className="relative flex flex-col items-center space-y-16 before:absolute before:top-0 before:bottom-0 before:left-1/2 before:w-1 before:-translate-x-1/2 before:bg-gradient-to-b before:from-[#ffd900] to-[#013e95]">
                 {painPoints.map((point, index) => {
                     const Icon = point.icon;
                     return (
@@ -86,15 +86,15 @@ export default function PainPointsSection() {
                             {/* Dot */}
                             <div className="absolute left-1/2 top-1 z-10 -translate-x-1/2">
                                 <span className="relative flex h-4 w-4">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75" />
-                                    <span className="relative inline-flex rounded-full h-4 w-4 bg-blue-600 border-2 border-[#141414]" />
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ffd900] opacity-75" />
+                                    <span className="relative inline-flex rounded-full h-4 w-4 bg-[#ffd900] border-2 border-[#141414]" />
                                 </span>
                             </div>
 
                             {/* Card */}
                             <div className="bg-[#1c1c1c] p-4 rounded-md shadow-sm border border-gray-800 max-w-xs w-full">
                                 <div className="flex items-center gap-3 mb-3">
-                                    <div className="bg-blue-600 p-2 rounded-full">
+                                    <div className="bg-gradient-to-r from-[#ffd900] to-[#013e95] p-2 rounded-full">
                                         <Icon
                                             size={20}
                                             className="text-white"
@@ -131,12 +131,12 @@ export default function PainPointsSection() {
                 >
                     <div className="absolute left-1/2 top-1 -translate-x-1/2 z-10">
                         <span className="relative flex h-4 w-4">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-500 opacity-75" />
-                            <span className="relative inline-flex rounded-full h-4 w-4 bg-purple-600 border-2 border-[#141414]" />
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ffd900] opacity-75" />
+                            <span className="relative inline-flex rounded-full h-4 w-4 bg-[#ffd900] border-2 border-[#141414]" />
                         </span>
                     </div>
 
-                    <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white p-6 md:p-8 rounded-lg shadow-lg max-w-2xl w-full mx-auto text-center">
+                    <div className="bg-gradient-to-r from-[#ffd900] to-[#013e95] text-white p-6 md:p-8 rounded-lg shadow-lg max-w-2xl w-full mx-auto text-center">
                         <h3 className="text-2xl font-bold mb-4">
                             Ready to Simplify Your D2C Business?
                         </h3>
@@ -150,7 +150,7 @@ export default function PainPointsSection() {
                                 if (el)
                                     el.scrollIntoView({ behavior: "smooth" });
                             }}
-                            className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition"
+                            className="px-6 py-3 bg-[#b19eff] text-black font-semibold rounded-lg hover:bg-gray-100 transition"
                         >
                             Book a Free Demo
                         </button>

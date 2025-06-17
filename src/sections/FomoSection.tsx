@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function FomoSection() {
     return (
-        <section className="bg-gradient-to-br from-purple-950/10 via-neutral-950 to-neutral-950 text-white py-28 relative overflow-hidden">
+        <section className="bg-gradient-to-br from-[#ffd900] via-neutral-950 to-[#013e95] text-white py-28 relative overflow-hidden">
             <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-600 opacity-30 rounded-full blur-3xl animate-pulse z-0" />
             <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-600 opacity-20 rounded-full blur-2xl animate-ping z-0" />
 
@@ -17,7 +17,7 @@ export default function FomoSection() {
                     className="text-4xl md:text-5xl font-extrabold text-white mb-6"
                 >
                     Over 5,000 D2C founders are scaling smarter with <br />
-                    <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-[#ffd900] to-[#013e95] bg-clip-text text-transparent">
                         TrackD2C
                     </span>
                 </motion.h2>

@@ -56,13 +56,13 @@ export default function Faqs() {
                 </div>
                 <h2 className="text-6xl font-medium mt-6 text-center max-w-xl mx-auto">
                     Questions? We&apos;ve got{" "}
-                    <span className="text-lime-400">answers</span>
+                    <span className="text-[#ffd900]">answers</span>
                 </h2>
                 <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">
                     {faqs.map((faq, faqIndex) => (
                         <div
                             key={faq.question}
-                            className="bg-neutral-900 rounded-2xl border border-white/10 p-6 cursor-pointer"
+                            className={twMerge("bg-neutral-900 rounded-2xl border border-white/10 p-6 cursor-pointer text-[#ffd900]", selectedIndex=== faqIndex && "text-[#013e95]")}
                             onClick={() => toggleIndex(faqIndex)}
                         >
                             <div className="flex justify-between items-center">
@@ -78,8 +78,8 @@ export default function Faqs() {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     className={twMerge(
-                                        "feather feather-plus text-lime-400 flex-shrink-0 transition duration-300",
-                                        selectedIndex === faqIndex && "rotate-45"
+                                        "feather feather-plus text-[#ffd900] flex-shrink-0 transition duration-300",
+                                        selectedIndex === faqIndex && "rotate-45 text-[#013e95]"
                                     )}
                                 >
                                     <line x1="12" y1="5" x2="12" y2="19"></line>

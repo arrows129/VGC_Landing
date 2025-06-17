@@ -40,11 +40,11 @@ export default function CallToAction() {
                 >
                     {Array.from({ length: 10 }).map((_, i) => (
                         <div key={i} className="flex items-center gap-16">
-                            <span className="text-lime-400 text-7xl group-hover:text-white">
+                            <span className="text-[#ffd900] text-7xl group-hover:text-white">
                                 &#10038;
                             </span>
-                            <span className="group-hover:text-lime-400">
-                                Try a demo
+                            <span className="group-hover:text-[#ffd900]">
+                                Book a demo
                             </span>
                         </div>
                     ))}

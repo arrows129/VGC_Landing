@@ -37,7 +37,7 @@ export default function Features() {
                     <Tag>Features</Tag>
                 </div>
                 <h2 className="text-6xl font-medium text-center mt-6 max-w-2xl mx-auto">
-                    Power-packed features for <span className="text-lime-400">modern D2C growth</span>
+                    Power-packed features for <span className="text-[#ffd900]">modern D2C growth</span>
                 </h2>
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 ">
                     <FeatureCard
@@ -132,7 +132,7 @@ export default function Features() {
                             key={feature}
                             className="bg-neutral-900 border border-white/10 inline-flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 items-center hover:scale-105 transition duration-500 group"
                         >
-                            <span className="bg-lime-400 text-neutral-950 size-5 rounded-full inline-flex items-center justify-center text-xl group-hover:rotate-180 transition duration-500">
+                            <span className="bg-[#ffd900] text-neutral-950 size-5 rounded-full inline-flex items-center justify-center text-xl group-hover:rotate-180 transition duration-500">
                                 &#10038;
                             </span>
                             <span className="font-medium md:text-lg">
