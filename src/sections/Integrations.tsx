@@ -1,42 +1,57 @@
 import Tag from "@/components/Tag";
-import figmaIcon from "@/assets/images/figma-logo.svg";
-import notionIcon from "@/assets/images/notion-logo.svg";
-import slackIcon from "@/assets/images/slack-logo.svg";
-import relumeIcon from "@/assets/images/relume-logo.svg";
-import framerIcon from "@/assets/images/framer-logo.svg";
-import githubIcon from "@/assets/images/github-logo.svg";
+import shiprocketIcon from "@/asset/shiprocket.svg";
+import shopifyIcon from "@/asset/shopify1.svg";
+import googleAdsIcon from "@/asset/google-ads.svg";
+import facebookAdsIcon from "@/asset/meta.svg";
+import razorpayIcon from "@/asset/razorpay.svg";
+import wordpressIcon from "@/asset/wordPress.png";
+import wixIcon from "@/asset/wix.svg";
+import googleAnalyticsIcon from "@/asset/google-analytics.svg";
 import IntegrationsColumn from "@/components/IntegrationsColumn";
 
 const integrations = [
     {
-        name: "Figma",
-        icon: figmaIcon,
-        description: "Figma is a collaborative interface design tool.",
+        name: "Shopify",
+        icon: shopifyIcon,
+        description: "Sync your store data seamlessly with Shopify.",
     },
     {
-        name: "Notion",
-        icon: notionIcon,
-        description: "Notion is an all-in-one workspace for notes and docs.",
+        name: "Razorpay",
+        icon: razorpayIcon,
+        description: "Track payments and settlements using Razorpay.",
     },
     {
-        name: "Slack",
-        icon: slackIcon,
-        description: "Slack is a powerful team communication platform.",
+        name: "WordPress",
+        icon: wordpressIcon,
+        description:
+            "Power your content-driven brand with WordPress integration.",
     },
     {
-        name: "Relume",
-        icon: relumeIcon,
-        description: "Relume is a no-code website builder and design system.",
+        name: "Wix",
+        icon: wixIcon,
+        description: "Connect your Wix store for unified performance tracking.",
     },
     {
-        name: "Framer",
-        icon: framerIcon,
-        description: "Framer is a professional website prototyping tool.",
+        name: "Shiprocket",
+        icon: shiprocketIcon,
+        description:
+            "Automate your logistics & returns with Shiprocket integration.",
     },
     {
-        name: "GitHub",
-        icon: githubIcon,
-        description: "GitHub is the leading platform for code collaboration.",
+        name: "Google Analytics",
+        icon: googleAnalyticsIcon,
+        description: "Get clarity on customer behavior with Google Analytics.",
+    },
+    {
+        name: "Google Ads",
+        icon: googleAdsIcon,
+        description: "Unify your marketing performance with Google Ads.",
+    },
+    {
+        name: "Meta Ads",
+        icon: facebookAdsIcon,
+        description:
+            "Measure impact with our Meta (Facebook & Instagram) Ads integration.",
     },
 ];
 
@@ -54,9 +69,9 @@ export default function Integrations() {
                             <span className="text-lime-400">others</span>
                         </h2>
                         <p className="text-white/50 mt-4 text-lg">
-                            VGC seamlessly connects with your favourite tools,
-                            making it easy to plug into any workflow and
-                            collaborate across platforms
+                            TrackD2C connects with your essential eCommerce,
+                            payment, and marketing tools, giving you a single
+                            source of truth across platforms.
                         </p>
                     </div>
                     <div>

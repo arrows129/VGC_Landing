@@ -6,7 +6,7 @@ export default function FeatureCard(props: {
     children?: React.ReactNode;
     className?: string;
 }) {
-    const {title, description, children, className} = props;
+    const { title, description, children, className } = props;
     return (
         <div className={twMerge("bg-neutral-900 border border-white/10 p-6 rounded-3xl", className)}>
             <div className="aspect-video">{children}</div>

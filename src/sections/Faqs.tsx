@@ -7,27 +7,38 @@ import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
 
 const faqs = [
-    {
-        question: "What is VGC and who is it for?",
-        answer: "VGC is a powerful D2C dashboard designed for direct-to-consumer brands. It helps you track performance, manage sales, understand your customers, and grow your business — all from one intuitive platform.",
-    },
-    {
-        question: "What can I track with the VGC dashboard?",
-        answer: "With VGC, you can monitor real-time sales, website traffic, customer lifetime value, repeat purchase rates, campaign performance, and more. Our insights are designed to drive actionable decisions.",
-    },
-    {
-        question: "Do I need any technical skills to use VGC?",
-        answer: "Not at all. VGC is built to be user-friendly for founders, marketers, and operators. No coding or technical setup is required — just connect your tools and start getting insights immediately.",
-    },
-    {
-        question: "Can I integrate VGC with my existing tools?",
-        answer: "Yes! VGC integrates with popular e-commerce platforms, ad networks, email tools, and CRMs. Setup is quick and our team is available to assist if needed.",
-    },
-    {
-        question: "Is my data secure with VGC?",
-        answer: "Absolutely. We use industry-standard encryption and best practices to ensure your data is secure, private, and only accessible to authorized users within your organization.",
-    },
+  {
+    question: "Who should use TrackD2C?",
+    answer:
+      "TrackD2C is built specifically for direct-to-consumer (D2C) brands looking to unify operations, marketing, logistics, and payments into one streamlined dashboard.",
+  },
+  {
+    question: "What kind of data can I track?",
+    answer:
+      "You can track everything from ad performance, real-time orders, returns, payouts, RTOs, customer journeys, to inventory sync — all in one place.",
+  },
+  {
+    question: "Do I need technical knowledge to get started?",
+    answer:
+      "Not at all. TrackD2C is built for founders, marketers, and ops teams — no coding or technical setup needed. Just connect your tools and you're ready.",
+  },
+  {
+    question: "Which tools does TrackD2C integrate with?",
+    answer:
+      "TrackD2C integrates with Shopify, Razorpay, Shiprocket, Google Ads, Meta Ads, Wix, WordPress, and more. We're adding new integrations regularly.",
+  },
+  {
+    question: "How long does onboarding take?",
+    answer:
+      "Most brands go live within 2-5 days. Our team assists you throughout, ensuring a smooth setup — no ERP consultants or long timelines required.",
+  },
+  {
+    question: "Is my brand’s data secure?",
+    answer:
+      "Absolutely. We use enterprise-grade encryption, tokenized API access, and adhere to the highest security standards to protect your business data.",
+  },
 ];
+
 
 
 export default function Faqs() {

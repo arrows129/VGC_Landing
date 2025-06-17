@@ -25,10 +25,10 @@ export default function Hero() {
 
         leftPointerAnimate([
             [leftPointerScope.current, { opacity: 1 }, { duration: 0.5 }],
-            [leftPointerScope.current, { y: 0, x: -200 }, { duration: 0.5 }],
+            [leftPointerScope.current, { y: 0, x: -100 }, { duration: 0.5 }],
             [
                 leftPointerScope.current,
-                { x: 0, y: [0, 16, 0] },
+                { x: 0, y: [0, 20, 0] },
                 { duration: 0.5, ease: easeInOut },
             ],
         ]);
@@ -64,6 +64,11 @@ export default function Hero() {
                 cursor: `url(${cursorYouImage.src}), auto`,
             }}
         >
+            <div className="absolute inset-0 -z-10">
+                <div className="absolute top-20 left-20 w-40 h-40 bg-purple-500 opacity-20 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-10 right-20 w-32 h-32 bg-blue-500 opacity-20 rounded-full blur-2xl animate-ping" />
+            </div>
+
             <div className="container relative">
                 {/* Left image */}
                 <motion.div
@@ -117,13 +122,15 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <h4 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6">
-                    Run Your D2C Brand Like a Pro <br/>All from One Dashboard
-                </h4>
+                <h1 className="text-center text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mt-8">
+                    Run Your D2C Brand Like a Pro <br />
+                    All from One Dashboard
+                </h1>
 
-                <p className="text-center text-white/70 text-lg md:text-xl mt-8 max-w-2xl mx-auto leading-relaxed">
-                    From logistics to ad performance, our platform centralizes your brand’s entire backend with data
-driven insights — so you can focus on growth.
+                <p className="text-center text-gray-300 text-base md:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+                    From logistics to ad performance, our platform centralizes
+                    your brand’s entire backend with data-driven insights — so
+                    you can focus on growth.
                 </p>
 
                 <form className="flex border border-white/15 rounded-full p-2 mt-8 max-w-lg mx-auto gap-6">

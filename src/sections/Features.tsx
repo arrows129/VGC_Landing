@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/jsx-key */
 import FeatureCard from "@/components/FeatureCard";
@@ -10,18 +12,24 @@ import Image from "next/image";
 import Avatar from "@/components/Avatar";
 import Key from "@/components/Key";
 import Button from "@/components/Button";
+import { useCallback } from "react";
 
 const features = [
-    "Asset Library",
-    "Code Preview",
-    "Flow Mode",
-    "Smart Sync",
-    "Auto Layout",
-    "Fast Search",
-    "Smart Guides",
+    "Realtime Sync",
+    "Auto-Reconciliation",
+    "Omni-channel Tracking",
+    "Insightful Reports",
+    "Smart Attribution",
+    "Unified Dashboard",
+    "Fast Settlements",
 ];
 
 export default function Features() {
+    const scrollToContact = useCallback(() => {
+        const contact = document.getElementById("contact");
+        if (contact) contact.scrollIntoView({ behavior: "smooth" });
+    }, []);
+
     return (
         <section className="py-24">
             <div className="container">
@@ -29,14 +37,12 @@ export default function Features() {
                     <Tag>Features</Tag>
                 </div>
                 <h2 className="text-6xl font-medium text-center mt-6 max-w-2xl mx-auto">
-                    Where power meets{" "}
-                    <span className="text-lime-400">simplicity</span>
+                    Power-packed features for <span className="text-lime-400">modern D2C growth</span>
                 </h2>
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 ">
                     <FeatureCard
-                        title="Real-time Collaboration"
-                        description="Work together seamlessly with conflict-free team
-                                editing"
+                        title="Team-wide Transparency"
+                        description="Empower your entire D2C team with a single source of truth."
                         className="md:col-span-2 lg:col-span-1 group"
                     >
                         <div className="aspect-video flex items-center justify-center ">
@@ -81,16 +87,15 @@ export default function Features() {
                     </FeatureCard>
 
                     <FeatureCard
-                        title="Interactive Prototyping"
-                        description=" Engage your clients with prototypes that react
-                                to user actions"
+                        title="Automated Analytics"
+                        description="Real-time insights that tell the full story — no spreadsheets required."
                         className="md:col-span-2 lg:col-span-1 group"
                     >
                         <div className="aspect-video flex items-center justify-center">
                             <p className="text-4xl font-extrabold text-white/20 group-hover:text-white/10 transition text-center duration-500">
-                                We&apos;ve achieved{" "}
-                                <span className="bg-gradient-to-r from-purple-400 to bg-pink-400 bg-clip-text text-transparent relative">
-                                    <span>incredible</span>
+                                Your data,{' '}
+                                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent relative">
+                                    <span>decoded</span>
                                     <video
                                         src="/assets/gif-incredible.mp4"
                                         autoPlay
@@ -99,28 +104,26 @@ export default function Features() {
                                         playsInline
                                         className="absolute bottom-full left-1/2 -translate-x-1/2 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 pointer-events-none transition duration-500"
                                     />
-                                </span>{" "}
-                                growth this year
+                                </span>
                             </p>
                         </div>
                     </FeatureCard>
 
                     <FeatureCard
-                        title="Keyboard Quick Actions"
-                        description="Powerful commands to help you create design more
-                                quickly"
+                        title="Smart Order Management"
+                        description="Easily filter, track, and manage orders across platforms with full clarity."
                         className="md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto"
                     >
                         <div className="aspect-video flex items-center justify-center gap-4">
-                            <Key className="w-28">shift</Key>
-                            <Key>alt</Key>
-                            <Key>c</Key>
+                            <Key className="w-28">Orders</Key>
+                            <Key>Status</Key>
+                            <Key>Track</Key>
                         </div>
                     </FeatureCard>
                 </div>
 
                 <div className="mt-8 flex items-center justify-center">
-                    <Button variant="primary">Book a call</Button>
+                    <Button variant="primary" onClick={scrollToContact}>Book a Free Demo</Button>
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-3 justify-center">

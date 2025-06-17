@@ -36,7 +36,7 @@ export default function IntegrationsColumn(props: {
                         >
                             <div className="flex justify-center">
                                 <Image
-                                    className="size-24 "
+                                    className="size-24"
                                     src={integration.icon}
                                     alt={integration.name}
                                 />

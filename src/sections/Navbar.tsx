@@ -16,17 +16,23 @@ const navLinks = [
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+
+    const scrollToContact = () => {
+        const el = document.getElementById("contact");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <>
-            <section className="py-4 lg:py-8 fixed w-full top-0 z-50 ">
+            <section className="py-4 lg:py-8 fixed w-full top-0 z-50">
                 <div className="container max-w-5xl">
-                    <div className=" border border-white/15 rounded-[27px] md:rounded-full bg-neutral-950/70 backdrop-blur">
+                    <div className="border border-white/15 rounded-[27px] md:rounded-full bg-neutral-950/70 backdrop-blur">
                         <div className="grid grid-cols-2 lg:grid-cols-3 p-2 px-4 md:pr-2 items-center">
                             <div>
                                 <Image
                                     src={logo}
                                     alt=""
-                                    className="h-9 md:h-11 w-auto "
+                                    className="h-9 md:h-11 w-auto"
                                 />
                             </div>
                             <div className="lg:flex justify-center items-center hidden">
@@ -83,15 +89,12 @@ export default function Navbar() {
                                         )}
                                     ></line>
                                 </svg>
-                                <Button
-                                    variant="secondary"
-                                    className="hidden md:inline-flex items-center"
-                                >
-                                    Book a call
-                                </Button>
+
+                                {/* Try Demo (Primary) */}
                                 <Button
                                     variant="primary"
                                     className="hidden md:inline-flex items-center"
+                                    onClick={scrollToContact}
                                 >
                                     Try demo
                                 </Button>
@@ -105,20 +108,21 @@ export default function Navbar() {
                                     exit={{ height: 0 }}
                                     className="overflow-hidden"
                                 >
-                                    <div className="flex flex-col items-center gap-4 py-4 ">
+                                    <div className="flex flex-col items-center gap-4 py-4">
                                         {navLinks.map((link) => (
                                             <a
                                                 href={link.href}
                                                 key={link.label}
-                                                className=""
                                             >
                                                 {link.label}
                                             </a>
                                         ))}
-                                        <Button variant="secondary">
-                                            Book a call
-                                        </Button>
-                                        <Button variant="primary">
+
+                                        {/* Try Demo (Mobile) */}
+                                        <Button
+                                            variant="primary"
+                                            onClick={scrollToContact}
+                                        >
                                             Try a demo
                                         </Button>
                                     </div>
